@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <a href="{% url 'home' %}">Start again</a>
+    <a href="{% url 'wheat' %}">Go to wheat</a>
+    <a href="{% url 'about' %}">About wheat</a>
+    
+    <h1>count.html</h1>    
+    <h4>You wrote {{ count }} words.</h4>
+<ul>
+{% for item in count_data  %}   
+<li>{{ item.0}}:{{item.1}}</li>
+{% endfor %}
+</ul> 
+</body>
+
+</html>
